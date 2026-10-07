@@ -50,7 +50,7 @@ def split_into_chunks(text):
     Split large text into overlapping chunks
     """
     splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
+        chunk_size=600,
         chunk_overlap=200
     )
     return splitter.split_text(text)
@@ -97,7 +97,7 @@ You are an AI assistant.
 Answer the question using ONLY the context below.
 If the answer is not present in the context, say exactly:
 "The answer is not available in the provided context."
-The answer has to be in bullet point format, each bullet point specifying the context in a simple manner to understand
+The answer has to be in bullet point format, each bullet point specifying the context in a manner that class 5 student understnds with relevant examples.
 
 
 Context:
